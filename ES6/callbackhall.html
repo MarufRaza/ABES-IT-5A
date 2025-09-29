@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <script>
+        // function getdata(dataid){
+        //     setTimeout(()=>{
+        //         console.log("data",dataid);
+        //     },3000);
+        // }
+        // getdata(1);
+        //  getdata(2);
+        //   getdata(3);
+        //    getdata(4);
+        //     getdata(5);
+        function getdata(dataid,getnextdata){
+            setTimeout(()=>{
+                console.log("data",dataid);
+                if(getnextdata){
+                    getnextdata();
+                }
+            },3000);
+        }
+        getdata(1,()=>{
+            getdata(2,()=>{
+                getdata(3,()=>{
+                    getdata(4)
+                })
+            })
+        });
+      
+    </script>
+</body>
+</html>
