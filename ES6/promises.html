@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <!--advance of nested xcall back-->
+    <!--syntax:promise(resolve,reject){
+
+}-->
+    <script>
+    const mypromise = new Promise((resolve, reject) => {
+        const password = "maruf@12345";
+        if (password.length > 8) {
+            resolve("password length is ok");
+        } else {
+            reject("password is shorter in length");
+        }
+    });
+
+    console.log(mypromise);
+
+    mypromise.then((msg) => {
+        console.log(msg);
+    });
+
+    mypromise.catch((msg) => {
+        console.log(msg);
+    })
+    .finally(()=>{
+        console.log("we are student of abes");
+    })
+</script>
+    
+</body>
+</html>
