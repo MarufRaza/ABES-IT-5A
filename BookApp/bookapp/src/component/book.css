@@ -1,0 +1,13 @@
+#book {
+    border: 5px solid brown;
+    height: auto;
+    width: 300px;
+    background-color: antiquewhite;
+    text-align: center;
+}
+#book img{
+    height: 200px;
+    width: 260px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
