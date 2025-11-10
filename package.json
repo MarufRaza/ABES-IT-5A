@@ -1,0 +1,32 @@
+{
+  "name": "abes-it-5a(maruf-raza)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarufRaza/ABES-IT-5A.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarufRaza/ABES-IT-5A/issues"
+  },
+  "homepage": "https://github.com/MarufRaza/ABES-IT-5A#readme",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.38.0",
+    "eslint": "^9.38.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.4.0",
+    "prettier": "^3.6.2",
+    "typescript-eslint": "^8.46.2"
+  },
+  "dependencies": {
+    "react-router-dom": "^7.9.5"
+  }
+}

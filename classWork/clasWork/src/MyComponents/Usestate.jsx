@@ -1,17 +1,27 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
 function Usestate() {
-  let count = 0;
+  const count = useRef(0);
+  const counter = useRef();
+  const button = useRef();
 
-  function changeCount() {
-    count++;
-    document.getElementById('counter').innerText = `Count: ${count}`;
+  function handleClick() {
+    count.current++;
+    counter.current.textContent = 'Count: ' + count.current;
+
+    if (count.current % 2 === 1) {
+      button.current.style.backgroundColor = 'green';
+      button.current.textContent = 'Green';
+    } else {
+      button.current.style.backgroundColor = 'red';
+      button.current.textContent = 'Red';
+    }
   }
 
   return (
     <div>
-      <p id="counter">Count: 0</p>
-      <button onClick={changeCount}>Click me</button>
+      <p ref={counter}>Count: 0</p>
+      <button ref={button} onClick={handleClick}>Click me</button>
     </div>
   );
 }
