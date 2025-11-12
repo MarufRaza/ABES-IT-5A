@@ -8,7 +8,7 @@ import Registration from "./component/registration";
 function App() {
   const [activeView, setActiveView] = useState("home");
 
-  const renderView = () => {
+  function renderView () {
     if (activeView === "login") return <Login />;
     if (activeView === "registration") return <Registration />;
     return (
